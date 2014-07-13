@@ -6,7 +6,7 @@ more than any other, illuminates our cultural attitudes towards testing. Why tes
 necessary to the end result?
 
 ##Friends are not 'necessary'
-<img src="http://i.imgur.com/IcwG4.jpg" alt="Drawing" style="width: 200px; float: left; margin-right: 20px;"/>
+<img src="http://i.imgur.com/IcwG4.jpg" width="200px" align="left" hspace="40" />
 Programming has a reputation of being about pure logic, results are either right or wrong. There are
 no subjective answers to `1 + 1`. If testing is not necessary to the output of `2` then what is its
 justification? Inevitably, such discussions must venture into the philosophical.
@@ -26,7 +26,7 @@ tests from the outside, you are the user.
 
 ##Testing changes how you write programs
 > If you can't explain it to a six year old, you don't understand it yourself    
-> * &mdash; Albert Einstein*
+> *&mdash; Albert Einstein*
 
 In order to test code you often have to break it up and refactor in order to isolate individual pieces
 for testing. Far from being an inconvenience, it almost always serves the code. Architecture becomes

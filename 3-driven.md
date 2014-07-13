@@ -9,7 +9,7 @@ Indeed, there's a celebrated movement in the testing world of writing your tests
 I've never really done this but apparently a lot of people do. What's interesting about this is that
 even without any code a test suite will run completely, it just won't pass any of the tests.
 
-For example [JSFiddle](http://jsfiddle.net/wzAyL/138/);
+For example ([JSFiddle](http://jsfiddle.net/wzAyL/138/));
 
 ```js
 describe("foo", function() {
@@ -48,4 +48,33 @@ Failures:
 Finished in 0.008 seconds
 2 tests, 2 assertions, 2 failures, 0 skipped
 ```
-mar
+
+##Our first green tests
+So let's puts some actual code in ([JSFiddle](http://jsfiddle.net/wzAyL/139/));
+
+```js
+var foo = 'bar';
+function theMeaningOfLife() {
+  return 42;
+}
+
+describe("foo", function() {
+  it("has a value of bar", function() {
+    expect(foo).toBe('bar');
+  });
+});
+
+describe("theMeaningOfLife()", function() {
+  it("displays the meaning of life", function() {
+    expect(theMeaningOfLife()).toBe(42);
+  });
+});
+```
+
+Outputs;
+```
+..
+
+Finished in 0.004 seconds
+2 tests, 2 assertions, 0 failures, 0 skipped
+```
