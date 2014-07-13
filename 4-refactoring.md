@@ -5,7 +5,7 @@ Refactoring was one of my first moments of testing enlightenment. We've all been
 taken ages to fix and finally we have a fix and we deploy it and are feeling pleased with ourselves.
 But then suddenly we realise that our 'fix' has broken something else :(
 
-Consider this 'Find a Cat' code ([JSFiddle](http://jsfiddle.net/wzAyL/142/));
+Consider this 'Find a Cat' code ([JSFiddle](http://jsfiddle.net/wzAyL/146/));
 ```js
 // Replace a particular character specified by 'index' with a new character
 function replaceAt(string, index, replacement) {
@@ -19,7 +19,6 @@ function replaceAt(string, index, replacement) {
 
 // Find the word 'cat' hidden in a string
 function findCat(string){
-  var output = '';
   var cat = ['c', 'a', 't'];
   // Pop off the first letter from the cat array
   var looking_for = cat.shift();

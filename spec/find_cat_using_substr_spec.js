@@ -10,7 +10,6 @@ function replaceAt(string, index, replacement) {
 
 // Find the word 'cat' hidden in a string
 function findCat(string){
-  var output = '';
   var cat = ['c', 'a', 't'];
   // Pop off the first letter from the cat array
   var looking_for = cat.shift();

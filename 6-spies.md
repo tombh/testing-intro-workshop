@@ -1,2 +1,2 @@
-#Mocking, Doubles, Stubs
+#Spies
 
