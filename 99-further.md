@@ -5,4 +5,4 @@
 ##Continuous Integration
 
 ##Idempotency
-Tearing down, etc
+Tearing down, fixtures, etc

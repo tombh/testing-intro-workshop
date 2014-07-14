@@ -53,8 +53,9 @@ As of July 2014 the above test passed because 'kittydar' is currently the most p
 were to change? Then the test would fail, even though we hadn't introduced any new code.
 
 ##Jasmine-ajax
-One solution is to stub out the underlying HTTP request and get it to return a mocked response of our choosing. For that
-we're going to use the [jasmine-ajax](https://github.com/pivotal/jasmine-ajax) extension ([JSFiddle](http://jsfiddle.net/wzAyL/148/));
+One solution is to stub out the underlying HTTP request and get it to return a mocked response of our choosing. It would
+be pretty complicated to write our own doubles for the `XMLHttpRequest` class. Fortunately, that's already been done for
+us with the [jasmine-ajax](https://github.com/pivotal/jasmine-ajax) extension ([JSFiddle](http://jsfiddle.net/wzAyL/148/));
 
 ```js
 function bestCatRepo(callback){
