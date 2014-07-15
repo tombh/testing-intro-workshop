@@ -7,10 +7,6 @@ should be fine.
 
 If you want to run the example specs under `spec/` you will need to install `jasmine-node` using `npm`.
 First you will need to install 'NodeJS' from [http://nodejs.org/download](http://nodejs.org/download/).
-Then you can install `jasmine-node` with `npm install jasmine-node -g`.
-
-To run the integration tests in `integration/` you will need to install the headless browser 'PhantomJS' from
-[http://phantomjs.org/download.html](http://phantomjs.org/download.html). You will also need NodeJS as explained
-above and the NodeJS Phantom runner; `npm install phantom`.
+Then you can install `jasmine-node` with `npm install jasmine-node@1.14.2 -g`.
 
 To run any of the specs just use `jasmine-node [path-to-spec]`

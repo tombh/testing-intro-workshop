@@ -96,9 +96,25 @@ monitor.
 There are a lot of headless browsers and frameworks that make it easy to use them. 2 popular projects are;
 [PhantomJS](http://phantomjs.org/) and [Selenium](http://docs.seleniumhq.org/)
 
-There is an example PhantomJS test in this repo that runs the same tests as above, see `integration/phantomjs_test.js`.
+This is what the above integration tests might look like in Ruby. They would work against the existing JS code we have
+written because the tests are talking to the PhantomJS driver;
 
-It looks like this;
-```js
+```ruby
+describe 'Cats Integration Tests' do
+  before :each do
+    visit './lib/cats.html'
+  end
 
+  it "should load a repo from github" do
+    expect(find('.repo').text).to_not be 'Loading...'
+  end
+
+  it "should find cats when clicking on the link" do
+    original = find('.repo').text
+    find_link('.catify').click
+    find('.repo').text
+    expect(find('.repo').text).to_not eq original
+    expect(find('.repo').text).to include('_')
+  end
+end
 ```

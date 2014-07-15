@@ -1,0 +1,26 @@
+{
+  "name": "testing-intro-workshop",
+  "version": "0.0.1",
+  "description": "Resources for a Bristol CodeHub workshop",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tombh/testing-intro-workshop.git"
+  },
+  "keywords": [
+    "testing",
+    "workshop"
+  ],
+  "author": "Tom Buckley-Houston",
+  "license": "GNU GPL",
+  "bugs": {
+    "url": "https://github.com/tombh/testing-intro-workshop/issues"
+  },
+  "homepage": "https://github.com/tombh/testing-intro-workshop",
+  "dependencies": {
+    "jasmine-node": "= 1.14.2"
+  }
+}
